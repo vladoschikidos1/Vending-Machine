@@ -1,9 +1,5 @@
 ﻿Public Class Form1
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles IblTitle.Click
-
-    End Sub
-
-    Private Sub btnFinish_Click(sender As Object, e As EventArgs) Handles btnFinish.Click
+    Public Sub CalculateCost()
         Dim totalCost As Decimal
         totalCost = 0
 
@@ -53,7 +49,13 @@
 
     End Sub
 
-    Private Sub chkCocaCola_CheckedChanged(sender As Object, e As EventArgs) Handles chkCocaCola.CheckedChanged
+    Private Sub btnFinish_Click(sender As Object, e As EventArgs) Handles btnFinish.Click
 
+        CalculateCost()
+
+    End Sub
+
+    Private Sub chkCocaCola_CheckedChanged(sender As Object, e As EventArgs) Handles chkCocaCola.CheckedChanged
+        CalculateCost()
     End Sub
 End Class
